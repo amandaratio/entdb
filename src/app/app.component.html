@@ -16,14 +16,14 @@
       <input class="form-control" placeholder="Title" name="title" type="text" [(ngModel)]="bookTitle">
       <input class="form-control" placeholder="Author" name="author" type="text" [(ngModel)]="bookAuthor">
       <input class="form-control" placeholder="Subject" name="subject" type="text" [(ngModel)]="bookSubject">
-      <div class="input-group-btn">
-       <button (click)="addBook()" class="btn btn-default">Add</button>
-      </div> 
-      </div>
+  
+      <button (click)="add()" class="btn btn-default">Add</button>
+       
+    </div>
   </form>
 </div>
 <div style="text-align:center;">
-  <div *ngFor="let book of books" style="width:25%;display:inline-block;margin:1%;border:1px solid black;">
+  <div *ngFor="let book of library" style="width:25%;display:inline-block;margin:1%;border:1px solid black;">
     <h4>
       Title: {{ book.title }} | Author: {{ book.author }}
     </h4>
