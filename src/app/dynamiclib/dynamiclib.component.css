@@ -1,0 +1,9 @@
+.form-control {
+    margin: 1%;
+    border-radius: 1%;
+    display: block
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0)
+}

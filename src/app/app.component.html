@@ -1,32 +1,5 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-   {{title}}
-  </h1> 
-</div>
-<div style="text-align:center;">
-  <ul>
-    <li style="display:inline-block;"><button (click) = "showHide= !showHide">+ Add a Book</button></li>
-    <li style="display:inline-block;"><button>Search</button></li>
-  </ul>
-</div>
-<div class="addBook" *ngIf="showHide">
-  <form class="navbar-form" role="search" style="text-align:center">
-    <div class="input-group add-on">
-      <input class="form-control" placeholder="Title" name="title" type="text" [(ngModel)]="bookTitle">
-      <input class="form-control" placeholder="Author" name="author" type="text" [(ngModel)]="bookAuthor">
-      <input class="form-control" placeholder="Subject" name="subject" type="text" [(ngModel)]="bookSubject">
-  
-      <button (click)="add()" class="btn btn-default">Add</button>
-       
-    </div>
-  </form>
-</div>
-<div style="text-align:center;">
-  <div *ngFor="let book of library" style="width:25%;display:inline-block;margin:1%;border:1px solid black;">
-    <h4>
-      Title: {{ book.title }} | Author: {{ book.author }}
-    </h4>
-  </div>
-</div>
+
+<nav></nav>
+<router-outlet></router-outlet>
+
 
