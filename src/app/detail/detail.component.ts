@@ -8,12 +8,8 @@ import { BookService } from '../book.service';
 
 @Component({
   selector: 'book-profile',
-  template: `
-  <div *ngIf='book'>
-    {{book.title}}
-  </div>
-  <button (click)="goBack()">Back</button>
-  `
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.css'],
   
 })
 export class DetailComponent implements OnInit {

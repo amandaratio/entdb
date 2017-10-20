@@ -7,7 +7,7 @@ import { DynamiclibComponent } from '../dynamiclib/dynamiclib.component';
 import { DetailComponent } from '../detail/detail.component';
 
 const BOOKS: Books[] =[
-  {title:"Sample1", author:"Author1", subject:"", cover:"", prev:""},
+  {title:"Sample1", author:"Author1", subject:"", cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", prev:""},
   {title:"Sample2", author:"Author2", subject:"", cover:"", prev:""},
   {title:"Sample3", author:"Author3", subject:"", cover:"", prev:""},
   {title:"Sample4", author:"Author4", subject:"", cover:"", prev:""},
