@@ -1,14 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
+import { Books } from '../books';
+import { BookService } from '../book.service';
 
-//get books 
-import { Books } from '../books.component';
 import { DynamiclibComponent } from '../dynamiclib/dynamiclib.component';
+import { DetailComponent } from '../detail/detail.component';
+
+const BOOKS: Books[] =[
+  {title:"Sample1", author:"Author1", subject:"", cover:"", prev:""},
+  {title:"Sample2", author:"Author2", subject:"", cover:"", prev:""},
+  {title:"Sample3", author:"Author3", subject:"", cover:"", prev:""},
+  {title:"Sample4", author:"Author4", subject:"", cover:"", prev:""},
+  {title:"Sample5", author:"Author5", subject:"", cover:"", prev:""},
+  {title:"Sample6", author:"Author6", subject:"", cover:"", prev:""}
+];
+
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.css'],
-  providers: [Books],
+  providers: [BookService],
 })
 
 export class HomepageComponent {
@@ -18,10 +30,28 @@ export class HomepageComponent {
   showHide: false;
   public library:Array<Object>;
 
-  constructor(_books: Books) {
-    this.library = _books.getLib();
+  books: Books[] = [];
+  selectedBook: Books;
+
+  constructor(
+    private router: Router,
+    private bookService: BookService){ }
+
+  getBooks(): void {
+    this.bookService.getBooks().then(books => this.books = books)
+  }
+  
+  ngOnInit(): void {
+    this.getBooks();
   }
 
+  onSelected(book: Books): void {
+    this.selectedBook = book;
+  }
+
+  gotoDetail(): void {
+    this.router.navigate(['/detail', this.selectedBook.title]);
+  }
 
 }
 

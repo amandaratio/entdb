@@ -9,6 +9,8 @@ import { CategoriesComponent } from './categories/categories.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { DynamiclibComponent } from './dynamiclib/dynamiclib.component';
 import { LibraryComponent } from './library/library.component';
+import { DetailComponent } from './detail/detail.component';
+import { BookService } from './book.service';
 
 // CUSTOM pipes
 //import { SearchByPipe } from './pipes/search-by.pipe';
@@ -22,6 +24,7 @@ import { LibraryComponent } from './library/library.component';
     HomepageComponent,
     DynamiclibComponent,
     LibraryComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,7 @@ import { LibraryComponent } from './library/library.component';
     // NEEDS TO BE LAST
     RoutingModule
   ],
-  providers: [],
+  providers: [ BookService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

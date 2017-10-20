@@ -41,5 +41,13 @@
     padding-top: 75%;
 }
 
+a {
+    color:black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 
 

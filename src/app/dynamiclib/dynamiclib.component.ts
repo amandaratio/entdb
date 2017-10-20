@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { Books } from '../books.component';
+
 @Component({
   selector: 'dynamiclib',
   templateUrl: './dynamiclib.component.html',
@@ -8,13 +9,9 @@ import { Books } from '../books.component';
   providers: [Books],
 })
 export class DynamiclibComponent implements OnInit {
-  public library:Array<Object>;
-
-  constructor(_books: Books) {
-    this.library = _books.getLib();
-  }
-
+  @Input()
+  library: object[] = [];
   ngOnInit() {
-  }
 
+  }
 }
