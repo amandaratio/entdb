@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: courier;
+}
+
+.active {
+    color: rgba(159, 159, 173, 0.623)
+}

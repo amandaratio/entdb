@@ -1,6 +1,10 @@
-
-.form-control {
-    margin: 1%;
-    border-radius: 1%;
-    display: block
+ul {
+    text-align: center
 }
+li{
+    float:none;
+    display: inline-block;
+}
+
+
+
