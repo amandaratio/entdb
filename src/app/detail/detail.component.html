@@ -1,11 +1,13 @@
-<div *ngIf="book">
-    <div class="col-sm-6">
-        <img src="{{book.cover}}" alt="" class="cover">
-    </div>
-    <div class="col-sm-6">
-        <h2>{{ book.title }}</h2>
-        <h4>{{ book.author }}</h4>
-        <h4>{{ book.prev }}</h4>
-        <button class="goBack-btn" (click)="goBack()">Back</button>
+<div >
+    <div class="col-md-12 detail-con">
+            <div class="col-sm-6 cover-con">
+                    <img src="{{ book.cover }}" alt="" class="cover">
+            </div>
+            <div class="col-md-6 details-con">
+                    <h2 style="margin-top:0;">{{ book.title }}</h2>
+                    <h4>{{ book.author }}</h4>
+                    <p class="book-prev">{{ book.prev }}</p>
+                    <button class="goBack-btn" (click)="goBack()">Back</button>
+            </div>
     </div>
 </div>

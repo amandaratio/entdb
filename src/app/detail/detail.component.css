@@ -2,8 +2,23 @@
     background-color: white;
     border-radius: 5%;
     border: 1px solid rgb(121, 121, 211);
+    margin: 1% 0
 }
 
 .cover {
-   height: 400px
+   height: 90%
+}
+
+.cover-con {
+    text-align: center;
+    padding-top:1%;
+    height: 100%
+}
+
+.details-con {
+    padding-top:1%
+}
+
+.book-prev {
+    margin: 0 2%
 }

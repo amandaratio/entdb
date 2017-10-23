@@ -3,11 +3,12 @@
 <div style="text-align:center;" class="libCon container-fluid">
   <div class='row'>
       <div *ngFor="let book of books" class="book rectangle-box">
-            <h4>
-              <a [routerLink]="['/detail', book.title]">
-              Title: {{ book.title }} | Author: {{ book.author }}
-              </a>
-            </h4>
+          <a [routerLink]="['/detail', book.title]">
+            <div class="bookBasics">
+                <h4>{{ book.title }}</h4>
+                <p>{{ book.author }}</p>
+            </div>
+          </a>
       </div>
   </div>
 </div>

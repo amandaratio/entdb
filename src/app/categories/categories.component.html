@@ -1,4 +1,38 @@
-<p>
-  categories works!
-</p>
+<div style="text-align:center;" class="libCon container-fluid">
+    <div class='row'>
+        <h3>Math:</h3>
+        <div *ngFor="let book of books" class="book rectangle-box">
+            <div *ngIf="book.subject.indexOf('math')>-1">
+                <a [routerLink]="['/detail', book.title]">
+                  <div class="bookBasics">
+                      <h4>{{ book.title }}</h4>
+                      <p>{{ book.author }}</p>
+                  </div>
+                </a>
+            </div>
+        </div>
+        <h3>Science:</h3>
+        <div *ngFor="let book of books" class="book rectangle-box">
+            <div *ngIf="book.subject.indexOf('science')>-1">
+                <a [routerLink]="['/detail', book.title]">
+                  <div class="bookBasics">
+                      <h4>{{ book.title }}</h4>
+                      <p>{{ book.author }}</p>
+                  </div>
+                </a>
+            </div>
+        </div>
+        <h3>Mystery:</h3> 
+        <div *ngFor="let book of books" class="book rectangle-box">
+            <div *ngIf="book.subject.indexOf('mystery')>-1">
+                <a [routerLink]="['/detail', book.title]">
+                  <div class="bookBasics">
+                      <h4>{{ book.title }}</h4>
+                      <p>{{ book.author }}</p>
+                  </div>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
 

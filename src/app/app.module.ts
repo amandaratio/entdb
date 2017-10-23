@@ -12,6 +12,7 @@ import { LibraryComponent } from './library/library.component';
 import { DetailComponent } from './detail/detail.component';
 import { BookService } from './book.service';
 
+
 // CUSTOM pipes
 //import { SearchByPipe } from './pipes/search-by.pipe';
 
@@ -25,6 +26,7 @@ import { BookService } from './book.service';
     DynamiclibComponent,
     LibraryComponent,
     DetailComponent,
+
   ],
   imports: [
     BrowserModule,

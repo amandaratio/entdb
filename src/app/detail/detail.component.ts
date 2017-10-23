@@ -23,8 +23,8 @@ export class DetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap
-      .switchMap((params: ParamMap) => this.bookService.getBook(params.get('title')))
-      .subscribe(book => this.book = book);
+    .switchMap((params: ParamMap) => this.bookService.getBook(params.get('title')))
+    .subscribe(book => this.book = book);
   }
   
   goBack(): void {

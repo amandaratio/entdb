@@ -1,6 +1,4 @@
-*{
 
-}
 
 .form-control {
     margin: 1%;
@@ -31,14 +29,15 @@
 
 .rectangle-box{
     position: relative;
-    width: 25%;
+    width: 15%;
+    margin: 0 1%;
     overflow: hidden;
     background: #4679BD;
 }
 .rectangle-box:before{
     content: "";
     display: block;
-    padding-top: 75%;
+    padding-top: 130%;
 }
 
 a {
@@ -47,6 +46,11 @@ a {
 
 a:hover{
     text-decoration: none;
+}
+
+.bookBasics {
+    position: absolute;
+    top: 40%;
 }
 
 
