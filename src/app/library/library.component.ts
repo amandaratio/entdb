@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { Books } from '../books';
+import { BookService } from '../book.service';
 
 @Component({
   selector: 'app-library',
@@ -6,10 +10,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./library.component.css']
 })
 export class LibraryComponent implements OnInit {
+  //public searchText: string;
+  books: Books[] = [];
 
-  constructor() { }
+  constructor(
+    private router: Router,
+    private bookService: BookService){ }
 
-  ngOnInit() {
+  getBooks(): void {
+    this.bookService.getBooks().then(books => this.books = books)
+  }
+  
+  ngOnInit(): void {
+    this.getBooks();
   }
 
 }

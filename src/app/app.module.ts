@@ -13,9 +13,10 @@ import { DetailComponent } from './detail/detail.component';
 import { BookService } from './book.service';
 
 
+
 // CUSTOM pipes
 //import { SearchByPipe } from './pipes/search-by.pipe';
-
+import { SrchFltrPipe } from './pipes/search-by.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { BookService } from './book.service';
     DynamiclibComponent,
     LibraryComponent,
     DetailComponent,
+    SrchFltrPipe
 
   ],
   imports: [
