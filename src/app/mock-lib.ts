@@ -1,7 +1,7 @@
 import { Books } from './books';
 import { Cats } from './cats';
 
-export const BOOKS: Books[] = [
+export var BOOKS: Books[] = [
     {
       title:"Harry Potter", author:"J.K Rowling", subject:"mystery", 
       cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", 
@@ -42,6 +42,27 @@ export const BOOKS: Books[] = [
       cover:"https://upload.wikimedia.org/wikipedia/en/3/32/Rye_catcher.jpg",
       prev: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam assumenda, a doloremque amet fugiat non error. Impedit ea, atque, aliquid magni perspiciatis ex consequuntur, quo enim velit nemo officia sed.Impedit error quis quibusdam deserunt libero, distinctio ab voluptatem voluptatum accusantium esse eaque? Error quidem eos earum aliquid optio sed blanditiis obcaecati. Quis omnis, culpa asperiores molestias perferendis nemo eum.In voluptate, ullam quis eum atque placeat! Quisquam repellendus ex ea, eaque assumenda impedit odio suscipit voluptatibus eveniet. Vero nam at corporis labore magnam iure officiis exercitationem accusantium consequatur ut. Doloribus esse id aut rerum velit modi, quasi blanditiis exercitationem veniam. Placeat illum, temporibus labore nisi voluptates ducimus minus quod perferendis, natus quae totam culpa nemo, consectetur repellendus esse ex.Provident temporibus non id, commodi, nesciunt pariatur beatae iure velit similique sequi quos minus. Quae praesentium nulla, placeat libero molestiae earum, sed cumque ea perspiciatis eaque inventore a ullam omnis."
     },
+    {
+      title:"Life of Pi", author:"Yann Martel", subject:"fiction religion life math", 
+      cover:"http://pradeepamohan.net/wp-content/uploads/2013/01/life-of-pi-book-cover.jpg",
+      prev: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam assumenda, a doloremque amet fugiat non error. Impedit ea, atque, aliquid magni perspiciatis ex consequuntur, quo enim velit nemo officia sed.Impedit error quis quibusdam deserunt libero, distinctio ab voluptatem voluptatum accusantium esse eaque? Error quidem eos earum aliquid optio sed blanditiis obcaecati. Quis omnis, culpa asperiores molestias perferendis nemo eum.In voluptate, ullam quis eum atque placeat! Quisquam repellendus ex ea, eaque assumenda impedit odio suscipit voluptatibus eveniet. Vero nam at corporis labore magnam iure officiis exercitationem accusantium consequatur ut. Doloribus esse id aut rerum velit modi, quasi blanditiis exercitationem veniam. Placeat illum, temporibus labore nisi voluptates ducimus minus quod perferendis, natus quae totam culpa nemo, consectetur repellendus esse ex.Provident temporibus non id, commodi, nesciunt pariatur beatae iure velit similique sequi quos minus. Quae praesentium nulla, placeat libero molestiae earum, sed cumque ea perspiciatis eaque inventore a ullam omnis."
+    },
+    {
+      title:"Animal Farm", author:"George Orwell", subject:"politics", 
+      cover:"https://images-na.ssl-images-amazon.com/images/I/71RjpVEyscL.jpg",
+      prev: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam assumenda, a doloremque amet fugiat non error. Impedit ea, atque, aliquid magni perspiciatis ex consequuntur, quo enim velit nemo officia sed.Impedit error quis quibusdam deserunt libero, distinctio ab voluptatem voluptatum accusantium esse eaque? Error quidem eos earum aliquid optio sed blanditiis obcaecati. Quis omnis, culpa asperiores molestias perferendis nemo eum.In voluptate, ullam quis eum atque placeat! Quisquam repellendus ex ea, eaque assumenda impedit odio suscipit voluptatibus eveniet. Vero nam at corporis labore magnam iure officiis exercitationem accusantium consequatur ut. Doloribus esse id aut rerum velit modi, quasi blanditiis exercitationem veniam. Placeat illum, temporibus labore nisi voluptates ducimus minus quod perferendis, natus quae totam culpa nemo, consectetur repellendus esse ex.Provident temporibus non id, commodi, nesciunt pariatur beatae iure velit similique sequi quos minus. Quae praesentium nulla, placeat libero molestiae earum, sed cumque ea perspiciatis eaque inventore a ullam omnis."
+    },
+    {
+      title:"Counting Descent", author:"Clint Smith", subject:"social", 
+      cover:"https://images-na.ssl-images-amazon.com/images/I/41L-aBEnNcL._SX331_BO1,204,203,200_.jpg",
+      prev: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam assumenda, a doloremque amet fugiat non error. Impedit ea, atque, aliquid magni perspiciatis ex consequuntur, quo enim velit nemo officia sed.Impedit error quis quibusdam deserunt libero, distinctio ab voluptatem voluptatum accusantium esse eaque? Error quidem eos earum aliquid optio sed blanditiis obcaecati. Quis omnis, culpa asperiores molestias perferendis nemo eum.In voluptate, ullam quis eum atque placeat! Quisquam repellendus ex ea, eaque assumenda impedit odio suscipit voluptatibus eveniet. Vero nam at corporis labore magnam iure officiis exercitationem accusantium consequatur ut. Doloribus esse id aut rerum velit modi, quasi blanditiis exercitationem veniam. Placeat illum, temporibus labore nisi voluptates ducimus minus quod perferendis, natus quae totam culpa nemo, consectetur repellendus esse ex.Provident temporibus non id, commodi, nesciunt pariatur beatae iure velit similique sequi quos minus. Quae praesentium nulla, placeat libero molestiae earum, sed cumque ea perspiciatis eaque inventore a ullam omnis."
+    },
+    {
+      title:"Black Hole Blues", author:"Janna Levin", subject:"science physics", 
+      cover:"https://images-na.ssl-images-amazon.com/images/I/51E9g9fcQEL._SX340_BO1,204,203,200_.jpg",
+      prev: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam assumenda, a doloremque amet fugiat non error. Impedit ea, atque, aliquid magni perspiciatis ex consequuntur, quo enim velit nemo officia sed.Impedit error quis quibusdam deserunt libero, distinctio ab voluptatem voluptatum accusantium esse eaque? Error quidem eos earum aliquid optio sed blanditiis obcaecati. Quis omnis, culpa asperiores molestias perferendis nemo eum.In voluptate, ullam quis eum atque placeat! Quisquam repellendus ex ea, eaque assumenda impedit odio suscipit voluptatibus eveniet. Vero nam at corporis labore magnam iure officiis exercitationem accusantium consequatur ut. Doloribus esse id aut rerum velit modi, quasi blanditiis exercitationem veniam. Placeat illum, temporibus labore nisi voluptates ducimus minus quod perferendis, natus quae totam culpa nemo, consectetur repellendus esse ex.Provident temporibus non id, commodi, nesciunt pariatur beatae iure velit similique sequi quos minus. Quae praesentium nulla, placeat libero molestiae earum, sed cumque ea perspiciatis eaque inventore a ullam omnis."
+    },
+    
   ];
 
   export const CATS: Cats[] = [

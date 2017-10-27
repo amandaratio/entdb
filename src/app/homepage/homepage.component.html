@@ -1,14 +1,34 @@
 
-<dynamiclib></dynamiclib>
+<div style="text-align:center;">
+    <ul>
+    <li style="display:inline-block;"><button (click) = "showHide= !showHide" class="btn">+ Add a Book</button></li>
+    </ul>
+  </div>
+  <div class="addBook" *ngIf="showHide">
+    <form class="navbar-form" role="search" style="text-align:center">
+    <div class="input-group add-on">
+        <input class="form-control" placeholder="Title" name="title" type="text" [(ngModel)]="bookTitle">
+        <input class="form-control" placeholder="Author" name="author" type="text" [(ngModel)]="bookAuthor">
+        <input class="form-control" placeholder="Subject(s)" name="subject" type="text" [(ngModel)]="bookSubject">
+    
+        <button (click)="addBook(bookTitle,bookAuthor,bookSubject)" class="btn btn-default">Add</button>
+        
+    </div>
+    </form>
+</div>
 <div style="text-align:center;" class="libCon container-fluid">
   <div class='row'>
-      <div *ngFor="let book of books" class="book rectangle-box">
-          <a [routerLink]="['/detail', book.title]">
-            <div class="bookBasics">
-                <h4>{{ book.title }}</h4>
-                <p>{{ book.author }}</p>
-            </div>
-          </a>
+      <div *ngFor="let book of books" class="book rectangle-box" [style.background-image]="'url(' + book.cover + ')'"
+      [routerLink]="['/detail', book.title]"
+      >
+      <div class="overlay">
+      <a [routerLink]="['/detail', book.title]">
+      <div class="bookBasics">
+            <h4>{{ book.title }}</h4>
+            <p>{{ book.author }}</p> 
+      </div>
+      </a>
+      </div>
       </div>
   </div>
 </div>

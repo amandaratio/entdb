@@ -10,7 +10,7 @@ import { BookService } from '../book.service';
   styleUrls: ['./library.component.css']
 })
 export class LibraryComponent implements OnInit {
-  //public searchText: string;
+
   books: Books[] = [];
 
   constructor(

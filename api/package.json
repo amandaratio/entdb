@@ -1,0 +1,19 @@
+{
+    "name": "entdb",
+    "version": "1.0.0",
+    "description": "Required libraries for the entdb class",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type":"git",
+      "url":"git://githubcom/amandaratio/entdb.git"
+    },
+    "author": "Amandaratio",
+    "license": "ISC",
+    "dependencies": {
+      "hapi": "^16.1.0",
+      "mongodb": "^2.2.22"
+    }
+  }

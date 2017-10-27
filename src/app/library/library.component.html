@@ -6,11 +6,13 @@
         <input class="libSearch" type="text" placeholder="search" [(ngModel)]="searchText">
     </div>
     <div class='row'>
-        <div class="book rectangle-box" *ngFor="let book of books | srchfltr: ['title', 'author']:  [searchText]" >
+        <div class="book rectangle-box" *ngFor="let book of books | srchfltr: ['title', 'author']:  [searchText]" [style.background-image]="'url(' + book.cover + ')'"
+        [routerLink]="['/detail', book.title]"
+        >
             <a [routerLink]="['/detail', book.title]">
                 <div class="bookBasics">
                     <h4>{{ book.title }}</h4>
-                    <p>{{ book.author }}</p>
+                    <p>{{ book.author }}</p> 
                 </div>
             </a>
         </div>

@@ -6,12 +6,6 @@
     display: block
 }
 
-.book {
-    height: 50%;
-    display:inline-block;   
-    border:1px solid rgb(127, 159, 247);
-}
-
 .libCon {
     width: 100%;
 }
@@ -40,6 +34,12 @@
     padding-top: 130%;
 }
 
+.book {
+    height: 50%;
+    background-size: cover;
+    display:inline-block;  
+}
+
 a {
     color:black;
 }
@@ -50,7 +50,27 @@ a:hover{
 
 .bookBasics {
     position: absolute;
-    top: 40%;
+    top:0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    color: white;
+}
+
+.bookBasics:hover {
+    background: rgb(40, 40, 51);
+    opacity: .9
+}
+
+
+button {
+    background-color: rgba(65, 35, 35, 0)
+}
+
+.book {
+    background-size: cover;
+    background-position: center
 }
 
 

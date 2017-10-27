@@ -1,18 +1,2 @@
-<div style="text-align:center;">
-  <ul>
-  <li style="display:inline-block;"><button (click) = "showHide= !showHide" class="btn">+ Add a Book</button></li>
-  </ul>
-</div>
-<div class="addBook" *ngIf="showHide">
-  <form class="navbar-form" role="search" style="text-align:center">
-  <div class="input-group add-on">
-      <input class="form-control" placeholder="Title" name="title" type="text" [(ngModel)]="bookTitle">
-      <input class="form-control" placeholder="Author" name="author" type="text" [(ngModel)]="bookAuthor">
-      <input class="form-control" placeholder="Subject" name="subject" type="text" [(ngModel)]="bookSubject">
-  
-      <button (click)="add()" class="btn btn-default">Add</button>
-      
-  </div>
-  </form>
-</div>
+
 

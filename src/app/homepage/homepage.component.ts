@@ -6,14 +6,6 @@ import { BookService } from '../book.service';
 import { DynamiclibComponent } from '../dynamiclib/dynamiclib.component';
 import { DetailComponent } from '../detail/detail.component';
 
-const BOOKS: Books[] =[
-  {title:"Sample1", author:"Author1", subject:"", cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", prev:""},
-  {title:"Sample2", author:"Author2", subject:"", cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", prev:""},
-  {title:"Sample3", author:"Author3", subject:"", cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", prev:""},
-  {title:"Sample4", author:"Author4", subject:"", cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", prev:""},
-  {title:"Sample5", author:"Author5", subject:"", cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", prev:""},
-  {title:"Sample6", author:"Author6", subject:"", cover:"http://bookriotcom.c.presscdn.com/wp-content/uploads/2014/08/HP_hc_old_1.jpg", prev:""}
-];
 
 
 @Component({
@@ -28,7 +20,6 @@ export class HomepageComponent {
   public bookAuthor: string;
   public bookSubject: string;
   showHide: false;
-  public library:Array<Object>;
 
   books: Books[] = [];
   selectedBook: Books;
@@ -38,7 +29,18 @@ export class HomepageComponent {
     private bookService: BookService){ }
 
   getBooks(): void {
-    this.bookService.getBooks().then(books => this.books = books)
+    this.bookService.getBooks().then(books => this.books = books.slice(1,5))
+  }
+
+  addBook(title: string, author: string, subject: string): void {
+    var newBook = {
+      "title": title,
+      "author": author,
+      "subject": subject,
+      "cover": "",
+      "prev": ""
+   };
+    this.bookService.addBook(newBook);
   }
   
   ngOnInit(): void {
@@ -52,6 +54,8 @@ export class HomepageComponent {
   gotoDetail(): void {
     this.router.navigate(['/detail', this.selectedBook.title]);
   }
+
+  mouseover:boolean;
 
 }
 
